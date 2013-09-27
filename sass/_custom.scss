@@ -1,0 +1,57 @@
+// Your custom SCSS should be written here...
+$lightGrey:#ddd;
+@mixin borderColor {
+    border:1px solid $lightGrey;
+}
+
+.searchbox {
+    background:$secondary-color;
+}
+
+.ar-container section {
+    margin-bottom:30px;
+}
+
+.featured-hotels {
+    @include borderColor;
+
+    .hotel-grid {
+        padding:15px;
+    }
+
+    .featured {
+        @include borderColor;
+
+        .btn {
+            display:block;
+        }
+    }
+}
+
+.hotel-types {
+    .btn {
+        margin-left:0;
+    }
+}
+
+
+.popular-areas {
+    margin-bottom:20px;
+
+    .popular {
+        background:$lightGrey;
+        position:relative;
+
+        h4 {
+            position:absolute;
+            top:0;
+            left:0;
+            padding:10px 20px;
+            background:rgba(100,200,200,0.6);
+        }
+
+        p {
+            margin:15px;
+        }
+    }
+}

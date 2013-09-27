@@ -1,0 +1,275 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope="" itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Gumby - A Flexible, Responsive CSS Framework - Powered by SASS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="humans.txt">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Facebook Metadata /-->
+    <meta property="fb:page_id" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:title" content="">
+
+    <!-- Google+ Metadata /-->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/gumby.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+     <div class="row navbar" id="nav1">
+        <!-- Toggle for mobile navigation, targeting the <ul> -->
+        <a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><i class="icon-menu"></i></a>
+        <h1 class="four columns logo">
+            <a href="#">
+                <img src="/img/logo.png" gumby-retina />
+            </a>
+        </h1>
+
+        <ul class="eight columns">
+            <li><a href="#">Features</a></li>
+            <li>
+                <a href="#">Documentation</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">The Grid</a></li>
+                        <li><a href="#">UI Kit</a></li>
+                        <li><a href="#">Sass</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Customize</a></li>
+        </ul>
+    </div>
+
+    <div class="searchbox row">
+        <div class="field destination four columns">
+            <input type="text" class="text input" placeholder="Where do you want to go?" />
+        </div>
+        <div class="field dates three columns">
+            <input type="text" class="text input" placeholder="Check in" />
+            <input type="text" class="text input" placeholder="Check out" />
+        </div>
+        <div class="field occupant three columns">
+            <input type="text" class="text input" placeholder="Adults" />
+            <input type="text" class="text input" placeholder="Children" />
+        </div>
+        <div class="field primary btn large two columns">
+            <input type="submit" class="" value="Search">
+        </div>
+    </div>
+
+    <div class="ar-container row">
+
+        <section class="row">
+            <h2 class="destination-title">Singapore</h2>
+            <video src="/video.mp4" width="1024px" height="300px"></video>
+        </section>
+
+        <section class="twelve colgrid">
+            <h3>Featured Hotels</h3>
+
+            <div class="featured-hotels">
+                <div class="row hotel-types">
+                    <div class="four columns large secondary btn"><a href="#boutique">Boutique Hotels</a></div>
+                    <div class="four columns large default btn"><a href="#luxury">Luxury Hotels</a></div>
+                    <div class="four columns large default btn"><a href="#budget">Budget Hotels</a></div>
+                </div>
+
+                <ul class="row hotel-grid">
+                    <li class="three columns">
+                        <div class="featured">
+                            <img src="http://placehold.it/232x165" alt="hotel" />
+                            <h4><a href="/hotel12345">The Regent Singapore, a Four Seasons Hotel</a></h4>
+                            <span class="rating 5-star">5 stars rating</span>
+                            <span class="wifi">Free WiFi</span>
+                            <span class="breakfast">Free Breakfast</span>
+                            <p class="recommend"><strong>75%</strong> recommended <a href="/hotel/reviews">120 reviews</a></p>
+                            <p class="price"><span class="currency">VND</span>12,100,300</p>
+                            <div class="large btn primary">
+                                <a href="/hotel">Book Now</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="three columns">
+                        <div class="featured">
+                            <img src="http://placehold.it/232x165" alt="hotel" />
+                            <h4><a href="/hotel12345">The Regent Singapore, a Four Seasons Hotel</a></h4>
+                            <span class="rating 5-star">5 stars rating</span>
+                            <span class="wifi">Free WiFi</span>
+                            <span class="breakfast">Free Breakfast</span>
+                            <p class="recommend"><strong>75%</strong> recommended <a href="/hotel/reviews">120 reviews</a></p>
+                            <p class="price"><span class="currency">VND</span>12,100,300</p>
+                            <div class="large btn primary">
+                                <a href="/hotel">Book Now</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="three columns">
+                        <div class="featured">
+                            <img src="http://placehold.it/232x165" alt="hotel" />
+                            <h4><a href="/hotel12345">The Regent Singapore, a Four Seasons Hotel</a></h4>
+                            <span class="rating 5-star">5 stars rating</span>
+                            <span class="wifi">Free WiFi</span>
+                            <span class="breakfast">Free Breakfast</span>
+                            <p class="recommend"><strong>75%</strong> recommended <a href="/hotel/reviews">120 reviews</a></p>
+                            <p class="price"><span class="currency">VND</span>12,100,300</p>
+                            <div class="large btn primary">
+                                <a href="/hotel">Book Now</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="three columns">
+                        <div class="featured">
+                            <img src="http://placehold.it/232x165" alt="hotel" />
+                            <h4><a href="/hotel12345">The Regent Singapore, a Four Seasons Hotel</a></h4>
+                            <span class="rating 5-star">5 stars rating</span>
+                            <span class="wifi">Free WiFi</span>
+                            <span class="breakfast">Free Breakfast</span>
+                            <p class="recommend"><strong>75%</strong> recommended <a href="/hotel/reviews">120 reviews</a></p>
+                            <p class="price"><span class="currency">VND</span>12,100,300</p>
+                            <div class="large btn primary">
+                                <a href="/hotel">Book Now</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="twelve colgrid">
+            <h3>Popular areas to stay in</h3>
+
+            <div class="popular-areas row">
+                <div class="six columns">
+                    <div class="popular">
+                        <img src="http://placehold.it/510x240" alt="orchard" />
+                        <h4>Orchard Road</h4>
+                        <p>Neque porro quis quan lord ametest, blah blah and some more blah</p>
+                        <p class="medium btn secondary"><a href="/orchard">View 40 hotels in this area</a></p>
+                    </div>
+                </div>
+
+                <div class="six columns">
+                    <div class="popular">
+                        <img src="http://placehold.it/510x240" alt="orchard" />
+                        <h4>Gardens by the bay</h4>
+                        <p>Neque porro quis quan lord ametest, blah blah and some more blah</p>
+                        <p class="medium btn secondary"><a href="/orchard">View 40 hotels in this area</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-areas row">
+                <div class="eight columns">
+                    <div class="popular">
+                        <img src="http://placehold.it/675x220" alt="orchard" />
+                        <h4>Botanic Gardens</h4>
+                        <p>Neque porro quis quan lord ametest, blah blah and some more blah</p>
+                        <p class="medium btn secondary"><a href="/orchard">View 40 hotels in this area</a></p>
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="popular">
+                        <img src="http://placehold.it/328x220" alt="orchard" />
+                        <h4>Little India</h4>
+                        <p>Neque porro quis quan lord ametest, blah blah and some more blah</p>
+                        <p class="medium btn secondary"><a href="/orchard">View 40 hotels in this area</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="large-12 columns">
+                <hr>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <p>© Copyright no one at all. Go to town.</p>
+                    </div>
+                    <div class="large-6 columns">
+                        <ul class="inline-list right">
+                            <li><a href="banded.html#">Link 1</a></li>
+                            <li><a href="banded.html#">Link 2</a></li>
+                            <li><a href="banded.html#">Link 3</a></li>
+                            <li><a href="banded.html#">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+    <!-- 2.0 for modern browsers, 1.10 for .oldie -->
+    <script>
+    var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+    if(!oldieCheck) {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+    } else {
+    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+    }
+    </script>
+    <script>
+    if(!window.jQuery) {
+    if(!oldieCheck) {
+      document.write('<script src="bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
+    } else {
+      document.write('<script src="bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
+    }
+    }
+    </script>
+
+    <!--
+    Include gumby.js followed by UI modules followed by gumby.init.js
+    Or concatenate and minify into a single file -->
+    <script gumby-touch="js/libs" src="bower_components/gumby/js/libs/gumby.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
+    <script src="bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
+    <script src="bower_components/gumby/js/libs/gumby.init.js"></script>
+
+    <!--
+    gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+    <script src="js/libs/gumby.min.js"></script> -->
+    <script src="bower_components/gumby/js/plugins.js"></script>
+    <script src="bower_components/gumby/js/main.js"></script>
+  </body>
+</html>
